@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    transition: 5s;
+    background-color:black;
+    color: white;
+    height: 55;
+     display: flex;
+    justify-content: space-between;
+ }
+ ul{
+     display: flex;
+     align-items: center;
+ 
+ }
+li{
+    list-style: none;
+    padding-left: 89;
+    font-size: large;
+}
+a{
+    border-bottom: 1px solid rgb(245, 246, 247);
+
+}
+.g{
+    margin-top: 2;
+    color: rgb(197, 191, 191);
+}
+.logo{
+    color: rgb(197, 191, 191);
+    text-shadow: .5px .3px white;
+    margin-top: 10;
+    padding-right: 15;
+    font-size:33;
+    letter-spacing: 1;
+
+}
+#chk{
+    color: cornflowerblue;
+    visibility: hidden;
+}
+.show,.hide{
+    display: none;
+}
+
+
+
+
+.bg{
+    transition: 9s;
+
+    background-image:url(bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    height: 90vh;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+
+.bgtext{    transition: 5s;
+
+    padding-right: 30;
+    color: black;
+    font-size: 40;
+    
+}
+.btn{    padding-right: 30;
+
+    margin-top: 130;
+ }
+ button{    transition: 5s;
+    border-radius:25px;
+    padding: 10;
+    width: 190;
+     font-size: x-large;
+     color: rgb(247, 235, 235);
+     background-color: rgb(26, 19, 19);
+box-shadow: 2px 2px rgb(219, 21, 21);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+     
+
+
+    .bg{
+        background-image:url(bg.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center;
+        height: 80vh;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .bgtext{
+         color: black;
+        font-size: 27;
+
+        padding-left: 64;
+    }
+    
+.btn{    padding-right: 30;
+
+    margin-top: 210;
+ }
+    
+    
+    
+    
+    
+    
+    .show,.hide{
+        display: block;
+    }
+    .menu{    padding: 80px 0;
+
+        transition: 3s;
+        line-height: normal;
+text-align: center;
+        height: 100%;
+    top: 0;
+    flex-direction: column;
+        position: fixed;
+        right: -100%;
+        width: 100%;
+        background-color: #000;
+        color: #eee;
+
+    }
+
+    li{
+        display: block;
+        padding-top: 22;
+    }
+    .show{
+        font-size: x-large;
+        margin-top: 16;
+
+    }
+#chk:checked ~ .menu{
+    right: 0;
+}
+}
